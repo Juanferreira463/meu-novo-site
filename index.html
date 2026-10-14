@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meu Primeiro Site</title>
+<style>
+:root{--cor:#ff7b00}
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial,sans-serif;background:#0b0b0e;color:#fff}
+header{padding:22px 8%;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #29292f}
+.logo{font-size:21px;font-weight:bold;color:var(--cor)}
+header a{color:#ddd;text-decoration:none}
+main{min-height:75vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:35px 20px;background:radial-gradient(ellipse at top,#24202a,#0b0b0e 65%)}
+.tag{color:var(--cor);letter-spacing:3px;text-transform:uppercase;font-size:12px}
+h1{font-size:clamp(36px,7vw,68px);margin:20px 0}
+p{max-width:600px;color:#bcbcc5;line-height:1.8;font-size:17px}
+button{margin-top:20px;background:var(--cor);border:0;border-radius:8px;padding:15px 24px;color:white;font-weight:bold;cursor:pointer}
+#mensagem{color:var(--cor);min-height:24px}
+footer{text-align:center;padding:24px;color:#888;border-top:1px solid #29292f}
+</style>
+</head>
+<body>
+<header><div class="logo">&lt;/&gt; MEU SITE</div><a href="#sobre">Sobre o projeto</a></header>
+<main id="sobre">
+<div class="tag">Meu projeto na internet</div>
+<h1>Meu Primeiro Site</h1>
+<p>Um projeto criado com HTML, CSS e JavaScript e publicado na internet.</p>
+<button onclick="document.getElementById('mensagem').textContent='Obrigado por visitar meu site!'">Clique aqui</button>
+<div id="mensagem" aria-live="polite"></div>
+</main>
+<footer>Desenvolvido com HTML, CSS e JavaScript · GitHub Pages</footer>
+</body>
+</html>
